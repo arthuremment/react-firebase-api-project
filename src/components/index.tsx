@@ -105,7 +105,7 @@ export const Result = ({ toggleFavorite, active, result }) => {
           <p>{result.imdb}</p>
         </div>
       </div>
-      <FavoriteBtn toggleFavorite={toggleFavorite} active={active} result={result} />
+      <FavoriteBtn toggleFavorite={toggleFavorite} result={result} />
     </article>
   )
 }

@@ -56,20 +56,18 @@ const SignUp = ({ toggleLogin, handleModal, currentUser }) => {
                     <hr />
                     <small className={feedback != "Account successfully created" ? "red" : "green"}>{feedback}</small>
                     <Input
-                        classNames="input email"
                         value="email"
-                        name="email"
+                        type="email"
                         placeholder="Ex: example@yahoo.com"
-                        action={e => {
+                        action={(e: { target: { value: any } }) => {
                             setCredentials({ ...credentials, email: e.target.value })
                         }}
                     />
                     <Input
-                        classNames="input psw"
                         value="password"
-                        name="password"
+                        type="password"
                         placeholder="******"
-                        action={e => {
+                        action={(e: { target: { value: any } }) => {
                             setCredentials({ ...credentials, psw: e.target.value })
                         }}
                     />

@@ -1,7 +1,6 @@
-import React from 'react'
 import { SignOut } from "../../api/auth"
 
-const Logout = ({ currentUser }) => {
+const Logout = () => {
   return (
     <button 
       className='logout' 

@@ -1,6 +1,5 @@
-import React from 'react'
 
-const Input = ({ value, action, classNames, type, placeholder }) => {
+const Input = ({ value, action, type, placeholder }) => {
 
   const capitalizeFirstLetter = (string) => {
     return string && string.charAt(0).toUpperCase() + string.slice(1);
@@ -11,7 +10,6 @@ const Input = ({ value, action, classNames, type, placeholder }) => {
       <label htmlFor="ExampleEmailInput">{capitalizeFirstLetter(value)}</label> 
       <input
         type={type}
-        classNames={classNames && classNames}
         id={value}
         name={value}
         placeholder={placeholder}

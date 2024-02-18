@@ -21,7 +21,7 @@ export const Header = ({ handleModal, currentUser }) => {
   )
 }
 
-export const Modal = ({ handleModal, modal, currentUser }) => {
+export const Modal = ({ handleModal, currentUser }) => {
   return (
     <section className="wrapper">
       <span className="icon-close" onClick={() => { handleModal() }}>X</span>

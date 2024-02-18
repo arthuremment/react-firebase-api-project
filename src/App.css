@@ -1,0 +1,311 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 5px;
+  padding-inline: 30px;
+  color: white;
+  background-color: rgb(252, 57, 57);
+}
+header .logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+header .logo span{
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .logo img{
+  background-size: cover;
+  height: 40px;
+  width: 30px;
+}
+header .login{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .login button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 15px;
+  text-transform: capitalize;
+  background-color: white;
+  color: rgb(252, 57, 57);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  text-align: center;
+  cursor: pointer;
+}
+header .login img{
+  background-size: cover;
+  height: 40px;
+  width: 30px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 60px;
+  padding: 60px;
+}
+nav a{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+}
+nav a:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+nav > a.hover:hover:not(.active) {
+  border-bottom: 2px solid rgb(252, 57, 57);
+}
+a.active{
+  color: rgb(252, 57, 57);
+  border-bottom: 2px solid rgb(252, 57, 57);
+}
+
+main{
+  background-color: lightgray;
+  width: 60%;
+  margin-inline: 20%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-self: center;
+}
+
+form div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+form div input{
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  outline: none;
+}
+form div button{
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+form div button img{
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
+
+.text{
+  color: rgb(252, 57, 57);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+article{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 30px 40px;
+}
+article .ImgMovie{
+  border: 1px solid black;
+  width: 160px;
+  height: 150px;
+}
+article .card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+article .InfoMovie h2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+  margin-right: 2px;
+}
+article .InfoMovie h2 span{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: large;
+}
+article .InfoMovie p{
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.favbtn{
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+.favimg{
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
+
+.container{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
+  width: 65%;
+  height: 50%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter:  blur(10px);
+  box-shadow: 1px 5px 15px rgba(170, 170, 170, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  transition: height 0.4s ease, transform 0.4s ease;
+}
+.wrapper .icon-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(252, 57, 57);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.wrapper .form-box{
+  width: 100%;
+  padding: 50px 70px 25px 70px;
+}
+
+.forms{
+  width: 100%;
+}
+.Input{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+.Input input:focus{
+  border: none;
+  box-shadow: 0 0 2px rgb(252, 57, 57);
+}
+.btn{
+  background-color: rgb(252, 57, 57);
+  color: white;
+  outline: none;
+  border: none;
+  padding-block: 10px;
+  cursor: pointer;
+  font-size: large;
+}
+.btn:hover{
+  box-shadow: 0 0 5px rgb(252, 57, 57);
+}
+.no-btn{
+  padding-block: 10px;
+  font-size: large;
+}
+.form-box{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.form-box form{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.form-box h2{
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+}
+.login-register{
+  align-self: flex-end;
+  color: lightslategray;
+}
+.login-register a{
+  text-decoration: none;
+  color: rgb(252, 57, 57);
+  font-style: italic;
+}
+.login-register a:hover{
+  text-decoration: underline;;
+}
+
+.red{
+  color: crimson;
+}
+.green{
+  color: green;
+}
+
+.logout-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-block: 30px;
+}
+.logout{
+  background-color: rgb(24, 24, 119);
+  color: white;
+  border: none;
+  width: 60%;
+  padding-block: 15px;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  align-self: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.logout:hover{
+  background-color: red;
+  cursor: pointer;
+  box-shadow: 0 0 2px red;
+}

@@ -25,7 +25,7 @@ export const Modal = ({ handleModal, modal, currentUser }) => {
   return (
     <section className="wrapper">
       <span className="icon-close" onClick={() => { handleModal() }}>X</span>
-      <Forms modal={modal} handleModal={handleModal} currentUser={currentUser}/>
+      <Forms handleModal={handleModal} currentUser={currentUser}/>
     </section >
   )
 }
@@ -119,6 +119,6 @@ export const Results = ({ movies, favorites, isSearching, active, toggleFavorite
     return <p className="text">No results :(</p>;
   }
   return results.map(result => {
-    return <Result toggleFavorite={toggleFavorite} active={active} result={result} />
+    return <Result toggleFavorite={toggleFavorite} result={result} />
   })
 }

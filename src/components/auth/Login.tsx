@@ -31,17 +31,17 @@ const Login = ({ toggleLogin }) => {
           <hr />
           <small>{feedback}</small>
           <Input
-            classNames="input email"
             value="email"
-            name="email"
+            type="email"
+            placeholder={""}
             action={e => {
               setCredentials({ ...credentials, email: e.target.value })
             }}
           />
           <Input
-            classNames="input psw"
             value="password"
-            name="password"
+            type="password"
+            placeholder={""}
             action={e => {
               setCredentials({ ...credentials, psw: e.target.value })
             }}

@@ -3,7 +3,7 @@ import Login from "./Login"
 import SignUp from './SignUp'
 import Logout from './Logout'
 
-const Forms = ({ handleModal, modal, currentUser }) => {
+const Forms = ({ handleModal, currentUser }) => {
 
   const [log, setLog] = React.useState(true)
   const toggleLogin = () => {

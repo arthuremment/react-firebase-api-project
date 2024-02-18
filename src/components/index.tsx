@@ -76,7 +76,7 @@ export const FavoriteBtn = ({ toggleFavorite, result }) => {
   )
 }
 
-export const Result = ({ toggleFavorite, active, result }) => {
+export const Result = ({ toggleFavorite, result }) => {
   return (
     <article>
       <div className="card">
